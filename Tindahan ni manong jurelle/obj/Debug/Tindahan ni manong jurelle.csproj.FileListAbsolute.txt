@@ -1,0 +1,16 @@
+C:\Users\Seanv\source\repos\Tindahan ni manong jurelle\Tindahan ni manong jurelle\bin\Debug\Tindahan ni manong jurelle.exe.config
+C:\Users\Seanv\source\repos\Tindahan ni manong jurelle\Tindahan ni manong jurelle\bin\Debug\Tindahan ni manong jurelle.exe
+C:\Users\Seanv\source\repos\Tindahan ni manong jurelle\Tindahan ni manong jurelle\bin\Debug\Tindahan ni manong jurelle.pdb
+C:\Users\Seanv\source\repos\Tindahan ni manong jurelle\Tindahan ni manong jurelle\obj\Debug\Tindahan ni manong jurelle.csproj.AssemblyReference.cache
+C:\Users\Seanv\source\repos\Tindahan ni manong jurelle\Tindahan ni manong jurelle\obj\Debug\Tindahan_ni_manong_jurelle.AdminLogin.resources
+C:\Users\Seanv\source\repos\Tindahan ni manong jurelle\Tindahan ni manong jurelle\obj\Debug\Tindahan_ni_manong_jurelle.Admins_Option.resources
+C:\Users\Seanv\source\repos\Tindahan ni manong jurelle\Tindahan ni manong jurelle\obj\Debug\Tindahan_ni_manong_jurelle.Form1.resources
+C:\Users\Seanv\source\repos\Tindahan ni manong jurelle\Tindahan ni manong jurelle\obj\Debug\Tindahan_ni_manong_jurelle.Properties.Resources.resources
+C:\Users\Seanv\source\repos\Tindahan ni manong jurelle\Tindahan ni manong jurelle\obj\Debug\Tindahan ni manong jurelle.csproj.GenerateResource.cache
+C:\Users\Seanv\source\repos\Tindahan ni manong jurelle\Tindahan ni manong jurelle\obj\Debug\Tindahan ni manong jurelle.csproj.CoreCompileInputs.cache
+C:\Users\Seanv\source\repos\Tindahan ni manong jurelle\Tindahan ni manong jurelle\obj\Debug\Tindahan ni manong jurelle.exe
+C:\Users\Seanv\source\repos\Tindahan ni manong jurelle\Tindahan ni manong jurelle\obj\Debug\Tindahan ni manong jurelle.pdb
+C:\Users\Seanv\source\repos\Tindahan ni manong jurelle\Tindahan ni manong jurelle\obj\Debug\Tindahan_ni_manong_jurelle.BOP.resources
+C:\Users\Seanv\source\repos\Tindahan ni manong jurelle\Tindahan ni manong jurelle\obj\Debug\Tindahan_ni_manong_jurelle.IM.resources
+C:\Users\Seanv\source\repos\Tindahan ni manong jurelle\Tindahan ni manong jurelle\obj\Debug\Tindahan_ni_manong_jurelle.SRR.resources
+C:\Users\Seanv\source\repos\Tindahan ni manong jurelle\Tindahan ni manong jurelle\obj\Debug\Tindahan_ni_manong_jurelle.Update.resources
