@@ -29,6 +29,7 @@ namespace Tindahan_ni_manong_jurelle
             InitializeComponent();
             dataGridView3.DataSource = im.displayBindingSource;
             DisplayList();
+            displayTransacHistory();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -57,6 +58,8 @@ namespace Tindahan_ni_manong_jurelle
 
         private void BOP_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'transactionTable._transactionTable' table. You can move, or remove it, as needed.
+            this.transactionTableTableAdapter.Fill(this.transactionTable._transactionTable);
             //add order invoice
             comboBox1.DataSource = im.addBindingSource;
             comboBox1.ValueMember = "ProductCode";
@@ -83,23 +86,43 @@ namespace Tindahan_ni_manong_jurelle
             dataGridView3.DataSource = dt;
 
         }
-      
+
+        public void displayTransacHistory()
+        {
+                       DataTable dt = new DataTable();
+            string viewInventory = "SELECT TransactionID, ProductCode, ProductName, Quantity, PricePerItem,TotalPrice, Date FROM transactionTable";
+            SqlDataAdapter sqldataadapter = new SqlDataAdapter(viewInventory, sqlconnection);
+            sqldataadapter.Fill(dt);
+            dataGridView2.DataSource = dt;
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             //add order
 
-            //Pcode = Convert.ToInt32(comboBox1.SelectedValue);
-            Pcode = 2;
+            
+            Pcode = Convert.ToInt32(comboBox1.SelectedValue);
             sqlconnection.Open();
-            SqlCommand cmd = new SqlCommand("BillingTransaction", sqlconnection);
+            SqlCommand cmd = new SqlCommand("BillingTransactionn", sqlconnection);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@_Quantity", Convert.ToInt32(textBox1.Text));
+            cmd.Parameters.AddWithValue("@_QuantityToDeduct", Convert.ToInt32(textBox1.Text));
             cmd.Parameters.AddWithValue("@_ProductCode", Pcode);
             cmd.ExecuteNonQuery();
             sqlconnection.Close();
-            MessageBox.Show("Item subtracted.");
+            MessageBox.Show("Billing successful.");
 
             DisplayList();
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

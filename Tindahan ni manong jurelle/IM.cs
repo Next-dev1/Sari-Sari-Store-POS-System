@@ -169,7 +169,7 @@ namespace Tindahan_ni_manong_jurelle
 
             MessageBox.Show("Item updated.");
             DisplayList();
-            //displayBindingSource.ResetBindings(false);
+            displayBindingSource.ResetBindings(false);
         }
 
         private void deleteButton_Click(object sender, EventArgs e)
@@ -189,14 +189,14 @@ namespace Tindahan_ni_manong_jurelle
 
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@_ProductCode", pCode);
-            cmd.Parameters.AddWithValue("", pCode);
+            //cmd.Parameters.AddWithValue("", pCode);
 
             cmd.ExecuteNonQuery();
             sqlconnection.Close();
             MessageBox.Show("Item deleted.");
 
             DisplayList();
-            //displayBindingSource.ResetBindings(false);
+            displayBindingSource.ResetBindings(false);
         }
 
         private void updatePrice_cmbBox_TextChanged(object sender, EventArgs e)
@@ -205,7 +205,7 @@ namespace Tindahan_ni_manong_jurelle
         }
         public void DisplayList()
         {
-            /*dataTable.Clear();
+            dataTable.Clear();
             string viewInventory = "SELECT ProductCode, ProductName, Price, Quantity , TotalPrice FROM inventoryTable";
             SqlDataAdapter sqldataadapter = new SqlDataAdapter(viewInventory, sqlconnection);
             
@@ -216,18 +216,8 @@ namespace Tindahan_ni_manong_jurelle
 
             displayBindingSource.ResetBindings(false);
             updateBindingSource.ResetBindings(false);
-            addBindingSource.ResetBindings(false);*/
-
-            DataTable dt = new DataTable();
-
-            string query = "SELECT ProductCode, ProductName, Price, Quantity , TotalPrice FROM inventoryTable";
-            SqlDataAdapter da = new SqlDataAdapter(query, sqlconnection);
-
-            da.Fill(dt);
-
-            displayBindingSource.DataSource = dt;
-            updateBindingSource.DataSource = dt;
-            addBindingSource.DataSource = dt;
+            addBindingSource.ResetBindings(false);
+            
         }
     }
 }
