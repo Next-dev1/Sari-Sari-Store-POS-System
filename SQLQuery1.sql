@@ -1,0 +1,1 @@
+﻿ProductCode int foreign key references inventoryTable(ProductCode),
