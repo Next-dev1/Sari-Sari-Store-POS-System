@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Tindahan_ni_manong_jurelle
 {
     public partial class AdminLogin: Form
@@ -15,6 +16,8 @@ namespace Tindahan_ni_manong_jurelle
         public AdminLogin()
         {
             InitializeComponent();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleDimensions = new SizeF(96F, 96F);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -45,6 +48,11 @@ namespace Tindahan_ni_manong_jurelle
             Form1 mm = new Form1();
             mm.Show();
             this.Hide();
+        }
+
+        private void AdminLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

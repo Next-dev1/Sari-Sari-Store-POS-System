@@ -121,7 +121,7 @@
   <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAAOdJREFUOE/tVMERgjAQTAmUQAmUQgmWYAfSAXaQQBqwA0uwBEqgBNwNq8KIk4SH
+        DgAACw4BQL7hQQAAAOdJREFUOE/tVMERgjAQTAmUQAmUQgmWYAfSAXaQQBqwA0uwBEqgBNwNq8KIk4SH
         ftyZHXJ7dzshHDEpsNaWpML98N6fuq4bwUkcqCmdh77v7cMEPItcT8ypLA14vQMbQSfpCWrMoeYoKQ40
         3MBB4QowKpAbscurpDi0g4vCNyAXdqkwDhY75z6e028MUVTiXNrl1+V6i8yxRnHLXtnMgMCDDkU7OdBD
         dsGwVqKRlAz0cj75EWtJQQxzx6ekZGz2/g2z8DXDiiLIeWpyiB5eJDSsZDdDyeWw5nB7fmFagOG6z+Dr
@@ -131,7 +131,7 @@
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAAPhJREFUOE/FU1sRgzAQREIlICESKqES6qB1ABJwkABCWgdIQAIS6C6zYZg+4MJH
+        DgAACw4BQL7hQQAAAPhJREFUOE/FU1sRgzAQREIlICESKqES6qB1ABJwkABCWgdIQAIS6C6zYZg+4MJH
         2ZmdoXt3e3dpkv0d3vtT27YXEt+55H2o6/oGDuAYCeNC4TSguJBJB9KY7Klh0rvS7FBxz5UlTetLHyTZ
         wLPSJKWkGdAqxeznGQ3BStKMpmm8DOfJTUDhA4UDCp0kNnJq1EmyQ8XTP0xzNaAZm+y7PiwMISyNnmyk
         8MHgJFjz+o2InZW2Da6JorjmGnlH18+SCUxkAb7L98kiEQ8L09/XB0Emm54WczZzEZw66+cqkMtnOOIW
@@ -141,7 +141,7 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAA+tJREFUeF7lWz1SYkEQ9ggbgWVkAifwAJZeQE4gJ2C9ALXkBJIaaUimEYRuYowB
+        DAAACwwBP0AiyAAAA+tJREFUeF7lWz1SYkEQ9ggbgWVkAifwAJZeQE4gJ2C9ALXkBJIaaUimEYRuYowB
         OVtcgPIE7Pc9epbns0GY1/OYYb+qr3Z589fd0zPdM+95Ehqnp6fnYLter9+Dz+AEnIHLAvmMZc+o36vV
         ajdsK92kBQh+CUWosKbovpzBGI/sU7qPEz8ACPoLAi8KClhyBkPcRuUZFSleJMe6P7ghIMRPEUYTsgpy
         id2JONWBlsfArzlBDk0ujWq8AYMdetY3kTKF9QYMwJ1dGzwacj8Sce0gG92jNmCMpKyUWcQvB3aETpmg
