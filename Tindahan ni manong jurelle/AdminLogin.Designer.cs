@@ -53,22 +53,20 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.DarkGray;
+            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.textBox1.Location = new System.Drawing.Point(57, 220);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(362, 29);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Admin";
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.DarkGray;
+            this.textBox2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.textBox2.Location = new System.Drawing.Point(57, 310);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(362, 29);
             this.textBox2.TabIndex = 1;
-            this.textBox2.Text = "admin01";
             // 
             // button1
             // 

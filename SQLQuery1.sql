@@ -1,8 +1,8 @@
 ﻿ALTER PROCEDURE BillingTransactionn
     @_ProductCode NVARCHAR(50),      -- The Code of the product being purchased
     @_QuantityToDeduct INT,          -- The quantity ordered by the customer
-    @_Date datetime,                  -- The date of the transaction
-    @_Payment MONEY                 -- The payment amount from the customer
+    @_Date datetime,                 -- The date of the transaction
+    @_Payment MONEY                  -- The payment amount from the customer
 AS
 BEGIN
     -- Set the number of rows affected to be off, optimizing performance

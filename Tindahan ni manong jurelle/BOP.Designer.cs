@@ -35,7 +35,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -56,11 +58,10 @@
             this.transactionTableTableAdapter = new Tindahan_ni_manong_jurelle.transactionTableTableAdapters.transactionTableTableAdapter();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -147,6 +148,16 @@
             this.panel1.TabIndex = 14;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(252, 54);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(66, 17);
+            this.label10.TabIndex = 35;
+            this.label10.Text = "Payment";
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -156,6 +167,15 @@
             this.label9.Size = new System.Drawing.Size(81, 17);
             this.label9.TabIndex = 34;
             this.label9.Text = "Order Date";
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(255, 79);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(225, 26);
+            this.textBox2.TabIndex = 36;
             // 
             // textBox1
             // 
@@ -192,10 +212,10 @@
             this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.ButtonFace;
             this.dateTimePicker1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.dateTimePicker1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Location = new System.Drawing.Point(22, 185);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(227, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(227, 22);
             this.dateTimePicker1.TabIndex = 2;
             this.dateTimePicker1.TabStop = false;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
@@ -361,15 +381,18 @@
             this.panel3.Size = new System.Drawing.Size(502, 158);
             this.panel3.TabIndex = 24;
             // 
-            // comboBox3
+            // button3
             // 
-            this.comboBox3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(99, 48);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(313, 28);
-            this.comboBox3.TabIndex = 36;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(99, 89);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(313, 39);
+            this.button3.TabIndex = 37;
+            this.button3.TabStop = false;
+            this.button3.Text = "View Receipt";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label6
             // 
@@ -381,35 +404,24 @@
             this.label6.TabIndex = 36;
             this.label6.Text = "Transaction ID";
             // 
-            // button3
+            // comboBox3
             // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(99, 89);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(313, 39);
-            this.button3.TabIndex = 37;
-            this.button3.Text = "View Receipt";
-            this.button3.UseVisualStyleBackColor = true;
+            this.comboBox3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(99, 48);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(313, 28);
+            this.comboBox3.TabIndex = 36;
             // 
-            // label10
+            // label11
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(252, 54);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(66, 17);
-            this.label10.TabIndex = 35;
-            this.label10.Text = "Payment";
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(255, 79);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(225, 26);
-            this.textBox2.TabIndex = 36;
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(621, 395);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(647, 13);
+            this.label11.TabIndex = 25;
+            this.label11.Text = "────────────────────────────────────────────────────────────────────────────────";
             // 
             // BOP
             // 
@@ -417,6 +429,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1384, 696);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.label8);
@@ -482,5 +495,6 @@
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
     }
 }

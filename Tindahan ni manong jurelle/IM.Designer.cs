@@ -86,7 +86,7 @@
             // 
             this.displayProducts.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.displayProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.displayProducts.Location = new System.Drawing.Point(18, 47);
+            this.displayProducts.Location = new System.Drawing.Point(19, 47);
             this.displayProducts.Name = "displayProducts";
             this.displayProducts.Size = new System.Drawing.Size(650, 693);
             this.displayProducts.TabIndex = 6;
@@ -279,10 +279,11 @@
             // updatePCode_cmbBox
             // 
             this.updatePCode_cmbBox.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.updatePCode_cmbBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updatePCode_cmbBox.FormattingEnabled = true;
             this.updatePCode_cmbBox.Location = new System.Drawing.Point(17, 44);
             this.updatePCode_cmbBox.Name = "updatePCode_cmbBox";
-            this.updatePCode_cmbBox.Size = new System.Drawing.Size(313, 21);
+            this.updatePCode_cmbBox.Size = new System.Drawing.Size(313, 24);
             this.updatePCode_cmbBox.TabIndex = 36;
             // 
             // label3
@@ -404,10 +405,11 @@
             // deletePCode_cmbBox
             // 
             this.deletePCode_cmbBox.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.deletePCode_cmbBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deletePCode_cmbBox.FormattingEnabled = true;
             this.deletePCode_cmbBox.Location = new System.Drawing.Point(18, 37);
             this.deletePCode_cmbBox.Name = "deletePCode_cmbBox";
-            this.deletePCode_cmbBox.Size = new System.Drawing.Size(313, 22);
+            this.deletePCode_cmbBox.Size = new System.Drawing.Size(313, 24);
             this.deletePCode_cmbBox.TabIndex = 38;
             // 
             // IM

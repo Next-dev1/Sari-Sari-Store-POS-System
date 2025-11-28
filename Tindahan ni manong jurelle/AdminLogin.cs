@@ -22,24 +22,21 @@ namespace Tindahan_ni_manong_jurelle
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string username = textBox1.Text;
-            string password = textBox2.Text;
-
-            if(username.Equals("Admin") && password.Equals("admin01"))
+            if(textBox1.Text.Trim().Equals("Admin") && textBox2.Text.Trim().Equals("admin01"))
             {
                 Admins_Option op = new Admins_Option();
                 op.Show();
                 this.Hide();
             }
-            else if(username != "Admin" )
+            else if (string.IsNullOrWhiteSpace(textBox1.Text) || string.IsNullOrWhiteSpace(textBox2.Text))
             {
-                label1.Text = "Unknown username...";
-                label1.ForeColor = Color.Red;
+                MessageBox.Show("Please fill in all fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
-            else
+            else if (!textBox1.Text.Equals("Admin") || !textBox2.Text.Equals("admin01"))
             {
-                label1.Text = "Wrong Password...";
-                label1.ForeColor = Color.Red;
+                MessageBox.Show("Incorrect user credentials", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
         }
 
