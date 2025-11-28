@@ -1,0 +1,55 @@
+INVENTORY MANAGEMENT
+
+CREATE TABLE [dbo].[inventoryTable] ( 
+
+    [ProductCode] INT             IDENTITY (1, 1) NOT NULL, 
+
+    [ProductName] VARCHAR (50)    NULL, 
+
+    [Price]       MONEY NULL, 
+
+    [Quantity]    VARCHAR (50)    NULL, 
+
+    [TotalPrice] MONEY NULL, 
+    PRIMARY KEY CLUSTERED ([ProductCode] ASC) 
+
+); 
+
+CREATE PROCEDURE [dbo].[AddProduct] 
+		@_ProductName varchar(50), 
+		@_Price money, 
+		@_Quantity int 
+AS BEGIN 
+
+INSERT INTO inventoryTable(ProductName, Price, Quantity) 
+VALUES(@_ProductName, @_Price, @_Quantity) 
+
+END 
+
+CREATE PROCEDURE [dbo].[DeleteProduct] 
+
+    @_ProductCode INT 
+
+AS 
+
+BEGIN 
+
+    DELETE FROM [dbo].[inventoryTable] 
+
+    WHERE ProductCode = @_ProductCode; 
+
+END 
+
+
+BILLING AND ORDER PROCESSING
+
+CREATE TABLE [dbo].[transactionTable]
+(
+	[TransactionID] INT NOT NULL PRIMARY KEY, 
+    [ProductCode] INT NULL, 
+    [ProductName] VARCHAR(50) NULL, 
+    [Quantity] INT NULL, 
+    [PricePerItem] MONEY NULL, 
+    [TotalPrice] MONEY NULL, 
+    [Date] DATE NULL
+)

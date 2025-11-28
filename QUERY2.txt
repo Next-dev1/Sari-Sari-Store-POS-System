@@ -1,0 +1,24 @@
+SELECT inventory.ProductCode, transaction.ProductCode
+FROM inventoryTable AS inventory
+INNER JOIN transactionTable AS transaction 
+inventory.ProductCode = transaction.ProductCode
+
+"ProductCode = " + productCode
+
+
+INSERT INTO transactionTable (
+    ProductCode,
+    ProductName,
+    Quantity,
+    PricePerItem,
+    TotalPrice
+)
+SELECT
+    i.ProductCode,
+    i.ProductName,
+    i.Quantity,
+    i.Price,            -- Note: Using Price from inventoryTable
+    i.TotalPrice,
+    CURRENT_DATE        -- Or a suitable date function for your SQL environment
+FROM
+    inventoryTable i;

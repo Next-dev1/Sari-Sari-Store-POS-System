@@ -23,7 +23,7 @@ namespace Tindahan_ni_manong_jurelle
         public DataTable dataTable = new DataTable();
         public BindingSource displayBindingSource = new BindingSource();
         public BindingSource updateBindingSource = new BindingSource();
-        public BindingSource addBindingSource = new BindingSource();
+        public BindingSource deleteBindingSource = new BindingSource();
 
 
 
@@ -57,24 +57,13 @@ namespace Tindahan_ni_manong_jurelle
         private void IM_Load(object sender, EventArgs e)
         {
             DisplayList();
-            //delete
+            refreshData();
 
-            deletePCode_cmbBox.DataSource = addBindingSource;
-            deletePCode_cmbBox.ValueMember = "ProductCode";
-            deletePCode_cmbBox.DisplayMember = "ProductCode";
-            addBindingSource.ResetBindings(false);
-
-            //update
-
-            updatePCode_cmbBox.DataSource = updateBindingSource;
-            updatePCode_cmbBox.ValueMember = "ProductCode";
-            updatePCode_cmbBox.DisplayMember = "ProductCode";
-            updateBindingSource.ResetBindings(false);
         }
         
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-
+            //useless
         }
 
         private void addButton_Click(object sender, EventArgs e)
@@ -154,6 +143,7 @@ namespace Tindahan_ni_manong_jurelle
                 MessageBox.Show("Select a product code to update an item.");
                 return;
             }
+            
 
             sqlconnection.Open();
             SqlCommand cmd = new SqlCommand("UpdateProduct", sqlconnection);
@@ -189,7 +179,6 @@ namespace Tindahan_ni_manong_jurelle
 
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@_ProductCode", pCode);
-            //cmd.Parameters.AddWithValue("", pCode);
 
             cmd.ExecuteNonQuery();
             sqlconnection.Close();
@@ -201,7 +190,7 @@ namespace Tindahan_ni_manong_jurelle
 
         private void updatePrice_cmbBox_TextChanged(object sender, EventArgs e)
         {
-
+            //useless
         }
         public void DisplayList()
         {
@@ -212,12 +201,25 @@ namespace Tindahan_ni_manong_jurelle
             sqldataadapter.Fill(dataTable);
             displayBindingSource.DataSource = dataTable;
             updateBindingSource.DataSource = dataTable;
-            addBindingSource.DataSource = dataTable;
+            deleteBindingSource.DataSource = dataTable;
 
-            displayBindingSource.ResetBindings(false);
+            displayBindingSource.ResetBindings(false);            
+        }
+        public void refreshData()
+        {
+            //delete
+
+            deletePCode_cmbBox.DataSource = deleteBindingSource;
+            deletePCode_cmbBox.ValueMember = "ProductCode";
+            deletePCode_cmbBox.DisplayMember = "ProductCode";
+            deleteBindingSource.ResetBindings(false);
+
+            //update
+
+            updatePCode_cmbBox.DataSource = updateBindingSource;
+            updatePCode_cmbBox.ValueMember = "ProductCode";
+            updatePCode_cmbBox.DisplayMember = "ProductCode";
             updateBindingSource.ResetBindings(false);
-            addBindingSource.ResetBindings(false);
-            
         }
     }
 }

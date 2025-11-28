@@ -1,0 +1,14 @@
+CREATE PROCEDURE [dbo].[Transaction] 
+
+	@_ProductCode INT
+AS
+
+BEGIN
+
+UPDATE inventoryTable
+SET inventoryTable.Quantity = inventoryTable.Quantity - T.Quantity
+FROM inventoryTable
+INNER JOIN transactionTable AS T
+    ON inventoryTable.ProductCode = T.ProductCode
+WHERE T.ProductCode = @_ProductCode
+END
